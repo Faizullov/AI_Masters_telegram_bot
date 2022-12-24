@@ -8,6 +8,6 @@
 # Как запустить?
 1) Используем docker-compose build и после этого up -d
 
-2) Работа с webhook. Необходимо ввести в командную строку ngrok http 5000, далее необходимо скопировать ссылку вида: "https://3cf9-176-59-162-109.eu.ngrok.io". Далее вводим:  curl --location --request POST 'https://api.telegram.org/bot <BOT TOKEN> /setWebhook' --header 'Content-Type: application/json' --data-raw '{"url": "<URL, который скопировали ранее>"}'
+2) Работа с webhook. Необходимо ввести в командную строку ngrok http 5000, далее необходимо скопировать ссылку вида: "https://3cf9-176-59-162-109.eu.ngrok.io". Далее вводим:  curl --location --request POST 'https://api.telegram.org/bot <Токен бота> /setWebhook' --header 'Content-Type: application/json' --data-raw '{"url": "<URL, который скопировали ранее>"}'
 
 3) После всех приготовлений бот по тегу https://t.me/airat_films_bot должен работать.
